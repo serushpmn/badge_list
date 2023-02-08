@@ -1,0 +1,180 @@
+// // COLORs Define HERE // //
+//.......................//
+$main_color: #f1f4f6;
+$header_color: #fafbfc;
+$primary: #3f69d6;
+$secondary: #6c757d;
+$success: #3ac47d;
+$info: #16aaff;
+$warning: #f7b924;
+$danger: #d92550;
+$focus: #444054;
+$alt: #794c8a;
+$light: #eeeeee;
+$dark: #343a40;
+$title: #555f78;
+
+// //MIXINS Define HERE ////
+//.....................//
+
+@mixin button_color($bg, $text) {
+  background-color: $bg;
+  color: $text;
+  cursor: pointer;
+  &:hover {
+    background-color: darken($bg, 5%);
+    color: $text;
+  }
+  &:active {
+    background-color: darken($bg, 10%);
+  }
+}
+@mixin badge_color($bg) {
+  background-color: $bg;
+}
+@mixin badge_color_border($bg, $border) {
+  background-color: $bg;
+  color: $border;
+}
+
+@mixin icon_color($color, $text) {
+  color: $color;
+  &:hover {
+    background-color: $color;
+    color: $text;
+    border: 1px solid transparent;
+  }
+}
+
+// //Buttons Starts HERE// //
+//......................//
+.btn-primary {
+  @include button_color($primary, #fff);
+}
+.btn-secondary {
+  @include button_color($secondary, #fff);
+}
+.btn-success {
+  @include button_color($success, #fff);
+}
+.btn-info {
+  @include button_color($info, #fff);
+}
+.btn-warning {
+  @include button_color($warning, #000);
+}
+.btn-danger {
+  @include button_color($danger, #fff);
+}
+.btn-focus {
+  @include button_color($focus, #fff);
+}
+.btn-alt {
+  @include button_color($alt, #fff);
+}
+.btn-light {
+  @include button_color($light, #000);
+}
+.btn-dark {
+  @include button_color($dark, #fff);
+}
+////Badges Starts HERE ////
+/// //......................//
+.badge-primary {
+  @include badge_color_border($primary, #fff);
+}
+.badge-secondary {
+  @include badge_color_border($secondary, #fff);
+}
+.badge-success {
+  @include badge_color_border($success, #fff);
+}
+.badge-info {
+  @include badge_color_border($info, #fff);
+}
+.badge-warning {
+  @include badge_color_border($warning, #fff);
+}
+.badge-danger {
+  @include badge_color_border($danger, #fff);
+}
+.badge-focus {
+  @include badge_color_border($focus, #fff);
+}
+.badge-alt {
+  @include badge_color_border($alt, #fff);
+}
+.badge-light {
+  @include badge_color_border($light, #fff);
+}
+.badge-dark {
+  @include badge_color_border($dark, #fff);
+}
+////Reverse Badges Starts HERE ////
+/// //......................//
+.badge-primary-reverse {
+  @include badge_color_border(#fff, $primary);
+}
+.badge-secondary-reverse {
+  @include badge_color_border(#fff, $secondary);
+}
+.badge-success-reverse {
+  @include badge_color_border(#fff, $success);
+}
+.badge-info-reverse {
+  @include badge_color_border(#fff, $info);
+}
+.badge-warning-reverse {
+  @include badge_color_border(#fff, $warning);
+}
+.badge-danger-reverse {
+  @include badge_color_border(#fff, $danger);
+}
+.badge-focus-reverse {
+  @include badge_color_border(#fff, $focus);
+}
+.badge-alt-reverse {
+  @include badge_color_border(#fff, $alt);
+}
+.badge-light-reverse {
+  @include badge_color_border(#fff, $light);
+}
+.badge-dark-reverse {
+  @include badge_color_border(#fff, $dark);
+}
+// icon buttons start Here//
+//.......................//
+.icon {
+  color: #a6abb0;
+  &:hover {
+    background-color: #f7f7f7;
+    color: $primary;
+  }
+}
+.icon-primary {
+  @include icon_color($primary, #fff);
+}
+.icon-secondary {
+  @include icon_color($secondary, #fff);
+}
+.icon-success {
+  @include icon_color($success, #fff);
+}
+.icon-info {
+  @include icon_color($info, #fff);
+}
+.icon-warning {
+  @include icon_color($warning, #000);
+}
+.icon-danger {
+  @include icon_color($danger, #fff);
+}
+.icon-alt {
+  @include icon_color($alt, #fff);
+}
+.icon-light {
+  @include icon_color($light, #fff);
+}
+.icon-dark {
+  @include icon_color($dark, #fff);
+}
