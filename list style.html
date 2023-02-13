@@ -5,193 +5,350 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>List</title>
   </head>
   <body>
-    <main>
-      <section id="advanced" class="flex">
-        <div class="col-6">
-          <div class="card-list-item">
-            <!-- item number 1 -->
-            <div class="list-item">
-              <div class="col-12 flex-center pad-20">
-                <div class="col-6 profile flex-start">
-                  <a href="#" class="profile-img-round"
-                    ><img src="img/profile.png" alt="profile pic"
-                  /></a>
-                  <div class="profile-text flex-col">
-                    <h3>Sorush Peimani</h3>
-                    <p>A Front-End Lover who just start to code! :)</p>
-                  </div>
-                </div>
-                <div class="profile-extra flex">
-                  <button class="btn-primary">Fire</button
-                  ><button class="btn-primary">Hire</button>
+    <main id="list-groups" class="flex">
+      <div class="col-6">
+        <div class="card-button">
+          <ul class="profile-lists flex-col bg-white">
+            <li class="profile-solo">
+              <div class="profile-lists--profile">
+                <img
+                  src="img/profile.png"
+                  alt="profile thumbnail"
+                  class="profile_round"
+                />
+                <div class="profile-lists--profile__name">
+                  <h2>Alina Mcloughlin</h2>
+                  <p>A short profile description</p>
                 </div>
               </div>
-            </div>
-            <!-- item number 2 -->
-            <div class="list-item">
-              <div class="col-12 flex-center pad-20">
-                <div class="col-6 profile flex-start">
-                  <a href="#" class="profile-img-square"
-                    ><img src="img/profile.png" alt="profile pic"
-                  /></a>
-                  <div class="profile-text flex-col">
-                    <h3>Ruben Tillman</h3>
-                    <p>Etiam sit amet orci eget eros faucibus</p>
-                  </div>
-                </div>
-                <div class="profile-extra flex">
-                  <span class="badge-label badge-danger">new</span>
+              <div class="profile-list--right-side">
+                <button class="btn-primary">Fire</button
+                ><button class="btn-primary">Hire</button>
+              </div>
+            </li>
+            <li class="profile-solo">
+              <div class="profile-lists--profile">
+                <img
+                  src="img/profile.png"
+                  alt="profile thumbnail"
+                  class="profile_square"
+                />
+                <div class="profile-lists--profile__name">
+                  <h2>Ruben Tillman</h2>
+                  <p>Etiam sit amet orci eget eros faucibus</p>
                 </div>
               </div>
-            </div>
-            <!-- item number 3 -->
-            <div class="list-item">
-              <div class="col-12 flex-center pad-20">
-                <div class="col-6 profile flex-start">
-                  <a href="#" class="profile-img-round"
-                    ><img src="img/profile.png" alt="profile pic"
-                  /></a>
-                  <div class="profile-text flex-col">
-                    <h3>Vinnie Wagstaff</h3>
-                  </div>
-                </div>
-                <div class="profile-extra flex">
-                  <span class="badge-pills badge-dark">datailes</span>
+              <div class="profile-list--right-side">
+                <span class="badge-pills badge-danger">NEW</span>
+              </div>
+            </li>
+            <li class="profile-solo">
+              <div class="profile-lists--profile">
+                <img
+                  src="img/profile.png"
+                  alt="profile thumbnail"
+                  class="profile_square"
+                />
+                <div class="profile-lists--profile__name">
+                  <h2>Vinnie Wagstaff</h2>
                 </div>
               </div>
-            </div>
-            <!-- item number 4 -->
-            <div class="list-item">
-              <div class="col-12 flex-center pad-20">
-                <div class="col-6 profile flex-start">
-                  <a href="#" class="profile-img-round"
-                    ><img src="img/profile.png" alt="profile pic"
-                  /></a>
-                  <div class="profile-text flex-col">
-                    <h3>Ella-Rose Henry</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetuer</p>
-                  </div>
-                </div>
-                <div class="profile-extra flex">
-                  <span class="cash">$377</span>
+              <div class="profile-list--right-side">
+                <span class="badge-pills badge-link badge-dark">Details</span>
+              </div>
+            </li>
+            <li class="profile-solo">
+              <div class="profile-lists--profile">
+                <img
+                  src="img/profile.png"
+                  alt="profile thumbnail"
+                  class="profile_square"
+                />
+                <div class="profile-lists--profile__name">
+                  <h2>Ella-Rose Henry</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetuer</p>
                 </div>
               </div>
-            </div>
-            <!-- item number 5 -->
-            <div class="list-item">
-              <div class="col-12 flex-center pad-20">
-                <div class="col-6 profile flex-start">
-                  <a href="#" class="profile-img-square"
-                    ><img src="img/profile.png" alt="profile pic"
-                  /></a>
-                  <div class="profile-text flex-col">
-                    <h3>Eliot Huber</h3>
-                  </div>
-                </div>
-                <div class="profile-extra flex">
-                  <span class="badge-pills badge-warning">43</span>
+              <div class="profile-list--right-side">
+                <span class="price">$377</span>
+              </div>
+            </li>
+            <li class="profile-solo">
+              <div class="profile-lists--profile">
+                <img
+                  src="img/profile.png"
+                  alt="profile thumbnail"
+                  class="profile_square"
+                />
+                <div class="profile-lists--profile__name">
+                  <h2>Eliot Huber</h2>
                 </div>
               </div>
-            </div>
-            <!-- item number 6 -->
-            <div class="list-item">
-              <div class="col-12 flex-center pad-20">
-                <div class="col-6 profile flex-start">
-                  <a href="#" class="profile-img-square"
-                    ><img src="img/profile.png" alt="profile pic"
-                  /></a>
-                  <div class="profile-text flex-col">
-                    <h3>Eliot Huber</h3>
-                  </div>
-                </div>
-                <div class="profile-extra flex">
-                  <span class="badge-pills badge-warning">43</span>
+              <div class="profile-list--right-side">
+                <span class="badge-pills badge-warning">43</span>
+              </div>
+            </li>
+            <li class="profile-solo product-sales">
+              <div class="profile-lists--profile">
+                <img
+                  src="img/profile.png"
+                  alt="profile thumbnail"
+                  class="profile_square"
+                />
+                <div class="profile-lists--profile__name product-sales">
+                  <h2>Product Sales</h2>
+                  <p>
+                    <span class="product-qty">43</span> Sales
+                    <span class="product-total-sales">$156,24</span> Totals
+                  </p>
                 </div>
               </div>
-            </div>
-            <!-- item number 7 -->
-            <div class="list-item">
-              <div class="col-12 flex-center pad-20">
-                <div class="col-6 profile flex-start">
-                  <a href="#" class="profile-img-square"
-                    ><img src="img/profile.png" alt="profile pic"
-                  /></a>
-                  <div class="profile-text flex-col">
-                    <h3>Eliot Huber</h3>
-                  </div>
+              <div class="profile-list--right-side percentage">
+                <div class="percentage_text">
+                  <p>52.5%</p>
+                  <span>YoY Growth</span>
                 </div>
-                <div class="profile-extra flex">
-                  <span class="badge-pills badge-warning">43</span>
+                <img src="img/circular-bar-chart.PNG" alt="" />
+              </div>
+            </li>
+            <li class="profile-solo">
+              <div class="profile-lists--profile">
+                <div class="profile-lists--profile__name">
+                  <h2>Product Sales</h2>
                 </div>
               </div>
-            </div>
-            <!-- item number 8 -->
-            <div class="list-item">
-              <div class="col-12 flex-center pad-20">
-                <div class="col-6 profile flex-start">
-                  <a href="#" class="profile-img-square"
-                    ><img src="img/profile.png" alt="profile pic"
-                  /></a>
-                  <div class="profile-text flex-col">
-                    <h3>Eliot Huber</h3>
-                  </div>
-                </div>
-                <div class="profile-extra flex">
-                  <span class="badge-pills badge-warning">43</span>
+              <div class="profile-list--right-side percentage">
+                <img src="img/circular-bar-chart 2.PNG" />
+              </div>
+            </li>
+            <li class="profile-solo hidden_action">
+              <div class="profile-lists--profile">
+                <i class="fa fa-gear"></i>
+                <div class="profile-lists--profile__name">
+                  <h2>Hidden Actions Pane</h2>
                 </div>
               </div>
-            </div>
-            <!-- item number 9 -->
-            <div class="list-item">
-              <div class="col-12 flex-center pad-20">
-                <div class="col-6 profile flex-start">
-                  <a href="#" class="profile-img-square"
-                    ><img src="img/profile.png" alt="profile pic"
-                  /></a>
-                  <div class="profile-text flex-col">
-                    <h3>Eliot Huber</h3>
-                  </div>
-                </div>
-                <div class="profile-extra flex">
-                  <span class="badge-pills badge-warning">43</span>
+              <div class="profile-list--right-side">
+                <span class="badge-pills badge-link badge-primary">follow</span>
+              </div>
+            </li>
+            <li class="profile-solo">
+              <div class="profile-lists--profile">
+                <i class="fa fa-file-o"></i>
+                <div class="profile-lists--profile__name">
+                  <h2>Example file 1</h2>
                 </div>
               </div>
-            </div>
-          </div>
+              <div class="profile-list--right-side">
+                <a href="#">
+                  <i class="fa fa-share"></i>
+                </a>
+              </div>
+            </li>
+          </ul>
         </div>
-        <div class="col-6">
-          <div class="chat-box">
-            <h4>chat box</h4>
-            <div class="card">
-              <div class="chat-screen">
-                <!-- first line -->
-                <div class="col-2 chat-messege col-12 flex">
-                  <a href="#" class="profile-img-square"
-                      ><img src="img/profile.png" alt="profile pic"
-                    /></a>
-                    <div class=" col-10 messege-text-left flex">
-                       <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system.</p>
-                    </div>
+      </div>
+      <div class="col-6">
+        <div class="card-button">
+          <ul class="chats flex-col bg-white">
+            <li><h4>with buttons</h4></li>
+            <li>
+              <ul class="chats-screen">
+                <li class="receive">
+                  <div class="profile chats--profile">
+                    <a href="#">
+                      <img
+                        src="img/profile.png"
+                        alt=""
+                        class="profile_square"
+                      />
+                      <span
+                        class="badge badge-dot badge-dot-border badge-success"
+                      ></span>
+                    </a>
                   </div>
-                     <span class="chat-time">11:01 AM | Yesterday</span>
-                      <!-- second line -->
-                  <div class="col-2 chat-messege col-12 flex">
-                         <div class=" col-10 messege-text-right flex">
-                         <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system.</p>
-                      </div>
-                      <a href="#" class="profile-img-square"
-                        ><img src="img/profile.png" alt="profile pic"
-                      /></a>
-                    </div>
+                  <div class="chat-text">
+                    <p>
+                      But I must explain to you how all this mistaken idea of
+                      denouncing pleasure and praising pain was born and I will
+                      give you a complete account of the system.
+                    </p>
+                    <span class="chat--time"> 11:01 AM | Yesterday</span>
+                  </div>
+                </li>
+                <li class="send">
+                  <div class="profile chats--profile">
+                    <a href="#">
+                      <img
+                        src="img/profile.png"
+                        alt=""
+                        class="profile_square"
+                      />
+                      <span
+                        class="badge badge-dot badge-dot-border badge-success"
+                      ></span>
+                    </a>
+                  </div>
+                  <div class="chat-text">
+                    <p>
+                      Expound the actual teachings of the great explorer of the
+                      truth, the master-builder of human happiness.
+                    </p>
+                    <span class="chat--time"> 11:01 AM | Yesterday</span>
+                  </div>
+                </li>
+                <li class="receive">
+                  <div class="profile chats--profile">
+                    <a href="#">
+                      <img
+                        src="img/profile.png"
+                        alt=""
+                        class="profile_square"
+                      />
+                      <span
+                        class="badge badge-dot badge-dot-border badge-success"
+                      ></span>
+                    </a>
+                  </div>
+                  <div class="chat-text">
+                    <p>
+                      But I must explain to you how all this mistaken idea of
+                      denouncing pleasure and praising pain was born and I will
+                      give you a complete account of the system.
+                    </p>
+                    <span class="chat--time"> 11:01 AM | Yesterday</span>
+                  </div>
+                </li>
+                <li class="send">
+                  <div class="profile chats--profile">
+                    <a href="#">
+                      <img
+                        src="img/profile.png"
+                        alt=""
+                        class="profile_square"
+                      />
+                      <span
+                        class="badge badge-dot badge-dot-border badge-success"
+                      ></span>
+                    </a>
+                  </div>
+                  <div class="chat-text">
+                    <p>
+                      Denouncing pleasure and praising pain was born and I will
+                      give you a complete account.
+                    </p>
+                    <span class="chat--time"> 11:01 AM | Yesterday</span>
+                  </div>
+                </li>
+                <li class="send">
+                  <div class="profile chats--profile">
+                    <a href="#">
+                      <img
+                        src="img/profile.png"
+                        alt=""
+                        class="profile_square"
+                      />
+                      <span
+                        class="badge badge-dot badge-dot-border badge-success"
+                      ></span>
+                    </a>
+                  </div>
+                  <div class="chat-text">
+                    <p>The master-builder of human happiness.</p>
+                    <span class="chat--time"> 11:01 AM | Yesterday</span>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <input
+                type="text"
+                placeholder="Write Here and hit enter to send"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="card-button">
+          <ul class="todo-list flex-col bg-white">
+            <li><h4>TODO List</h4></li>
+            <li class="profile-solo">
+              <div class="todo-indicator bg-warning"></div>
+              <div class="profile-lists--profile">
+                <input type="checkbox" name="" id="" />
+                <div class="profile-lists--profile__name">
+                  <h2>Alina Mcloughlin</h2>
 
-            </div>
-          </div>
+                  <p>A short profile description</p>
+                </div>
+                <span class="badge badge-label badge-danger">REJECTED</span>
+              </div>
+              <div class="profile-list--right-side">
+                <a href="#"><i class="fa fa-check"></i></a>
+                <a href="#"><i class="fa fa-trash"></i></a>
+              </div>
+            </li>
+            <li class="profile-solo">
+              <div class="todo-indicator bg-alt"></div>
+              <div class="profile-lists--profile">
+                <input type="checkbox" name="" id="" />
+                <div class="profile-lists--profile__name">
+                  <h2>Alina Mcloughlin</h2>
+
+                  <p>A short profile description</p>
+                </div>
+              </div>
+              <div class="profile-list--right-side">
+                <select name="" id="">
+                  <option value="">MENU</option>
+                  <option value="">Header</option>
+                  <option value="">another action</option>
+                </select>
+              </div>
+            </li>
+            <li class="profile-solo">
+              <div class="todo-indicator bg-warning"></div>
+              <div class="profile-lists--profile">
+                <input type="checkbox" name="" id="" />
+                <div class="profile-lists--profile__name">
+                  <h2>Alina Mcloughlin</h2>
+
+                  <p>A short profile description</p>
+                </div>
+                <span class="badge badge-label badge-danger">REJECTED</span>
+              </div>
+              <div class="profile-list--right-side">
+                <a href="#"><i class="fa fa-check"></i></a>
+                <a href="#"><i class="fa fa-trash"></i></a>
+              </div>
+            </li>
+            <li class="profile-solo">
+              <div class="todo-indicator bg-warning"></div>
+              <div class="profile-lists--profile">
+                <input type="checkbox" name="" id="" />
+                <div class="profile-lists--profile__name">
+                  <h2>Alina Mcloughlin</h2>
+
+                  <p>A short profile description</p>
+                </div>
+                <span class="badge badge-label badge-danger">REJECTED</span>
+              </div>
+              <div class="profile-list--right-side">
+                <a href="#"><i class="fa fa-check"></i></a>
+                <a href="#"><i class="fa fa-trash"></i></a>
+              </div>
+            </li>
+          </ul>
         </div>
-      </section>
+      </div>
     </main>
   </body>
 </html>

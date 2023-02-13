@@ -342,6 +342,16 @@ a {
   position: relative;
 }
 
+ul {
+  list-style: none;
+}
+
+.bg-white {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
 main {
   padding: 30px;
 }
@@ -603,85 +613,268 @@ h4 {
   height: 2rem;
 }
 
-#advanced a.profile-img-round img {
+ul.profile-lists li {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+ul.profile-lists li .profile-lists--profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ul.profile-lists li .profile-lists--profile img {
   width: 4rem;
   height: 4rem;
+  margin-right: 1rem;
+}
+ul.profile-lists li .profile-lists--profile .profile_round {
   border-radius: 50%;
-  margin-right: 0.5rem;
 }
-#advanced a.profile-img-square img {
-  width: 4rem;
-  height: 4rem;
-  border-radius: 0.5rem;
-  margin-right: 0.5rem;
-}
-#advanced .card-list-item {
-  background-color: #fff;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  margin: 10px;
+ul.profile-lists li .profile-lists--profile .profile_square {
   border-radius: 0.25rem;
 }
-#advanced .list-item {
-  border-bottom: 1px solid rgb(234, 234, 234);
+ul.profile-lists li .profile-lists--profile .product-sales p {
+  color: rgb(66, 66, 66);
+  opacity: 1;
 }
-#advanced .profile .profile-text {
-  flex-grow: 1;
+ul.profile-lists li .profile-lists--profile .product-sales .product-qty {
+  color: #343a40;
+  font-weight: bold;
 }
-#advanced .profile h3 {
-  margin-bottom: 0.5rem;
+ul.profile-lists li .profile-lists--profile .product-sales .product-total-sales {
+  color: #3ac47d;
+  font-weight: bold;
 }
-#advanced .profile p {
-  color: rgb(189, 189, 189);
-  font-size: 1.2rem;
-  font-weight: 500;
+ul.profile-lists li .profile-lists--profile i {
+  font-size: 1.5rem;
+  padding: 1rem;
 }
-#advanced .profile-extra button {
+
+.profile-lists--profile__name {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: center;
+}
+.profile-lists--profile__name h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #555f78;
+  opacity: 0.9;
+}
+.profile-lists--profile__name p {
+  font-size: 1.3rem;
+  color: #6c757d;
+  opacity: 0.6;
+}
+
+.profile-list--right-side button {
   margin: 0;
   border-radius: 0;
 }
-#advanced .profile-extra button:first-child {
+.profile-list--right-side button:first-child {
   border-top-left-radius: 0.45rem;
   border-bottom-left-radius: 0.45rem;
 }
-#advanced .profile-extra button:last-child {
+.profile-list--right-side button:last-child {
   border-top-right-radius: 0.45rem;
   border-bottom-right-radius: 0.45rem;
 }
+.profile-list--right-side span {
+  margin: 0;
+}
+.profile-list--right-side .price {
+  color: #3f69d6;
+  font-size: 2.6rem;
+  font-weight: 700;
+}
+.profile-list--right-side .badge-warning {
+  color: #000;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
 
-.chat-box {
-  background-color: #fff;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  margin: 10px;
+.percentage {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+.percentage .percentage_text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-end;
+  font-size: 1.2rem;
+}
+.percentage p {
+  font-weight: 600;
+}
+.percentage span {
+  color: #6c757d;
+  opacity: 0.8;
+}
+.percentage img {
+  width: 5rem;
+}
+
+.hidden_action i {
+  font-size: 3rem;
+  padding: 0.5rem 0.75rem;
+  color: aqua;
+  border: 1px solid #ededed;
+  margin-right: 1rem;
+  border-radius: 0.5rem;
+}
+.hidden_action span {
+  opacity: 0;
+}
+.hidden_action:hover span {
+  opacity: 1;
+}
+
+.chats > li {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+.chats .chats-screen {
+  height: 20rem;
+  overflow-y: auto;
+  scrollbar-gutter: var(--gutter, auto);
+}
+.chats .chats-screen::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0;
+}
+.chats .chats-screen::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 1rem;
+}
+.chats .chats-screen li {
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+.chats .chats-screen img {
+  width: 4rem;
+  height: 4rem;
+}
+.chats .chats-screen .profile_round {
+  border-radius: 50%;
+}
+.chats .chats-screen .profile_square {
   border-radius: 0.25rem;
 }
-.chat-box h4 {
-  font-size: 1.6rem;
-  padding: 2rem;
-  border-bottom: 1px solid rgb(234, 234, 234);
+.chats .chats-screen .chats--profile a {
+  padding: 0;
+  position: relative;
 }
-.chat-box span {
-  color: #c0c0c0;
+.chats .chats-screen span {
+  top: auto;
+  bottom: 0;
 }
-.chat-box .chat-messege a {
-  padding: 1px;
+.chats .chats-screen .chat-text {
+  display: flex;
+  flex-direction: column;
 }
-.chat-box .chat-messege p {
-  color: #343a40;
-  font-size: 1.6rem;
+.chats .chats-screen .chat-text p {
+  font-size: 1.4rem;
+  background-color: #e0f3ff;
+  padding: 1.5rem;
+  border-radius: 3rem;
+  color: #555f78;
 }
-.chat-box .chat-messege .messege-text-left {
-  flex-grow: 1;
-  padding: 1.5rem 3rem;
-  margin: 0.5rem;
-  background-color: rgb(222, 255, 252);
-  border-radius: 5rem;
+.chats .chats-screen .chat-text span {
+  display: block;
+  padding: 1rem;
+  color: #a1a1a1;
+}
+.chats .chats-screen .receive p {
   border-top-left-radius: 0;
 }
-.chat-box .chat-messege .messege-text-right {
-  flex-grow: 1;
-  padding: 1.5rem 3rem;
-  margin: 0.5rem;
-  background-color: rgb(222, 255, 252);
-  border-radius: 5rem;
+.chats .chats-screen .send {
+  flex-direction: row-reverse;
+}
+.chats .chats-screen .send p {
   border-top-right-radius: 0;
+}
+.chats .chats-screen .send span {
+  margin-left: auto;
+}
+.chats input {
+  flex-basis: 100%;
+  font-size: 2rem;
+  padding: 1rem;
+  border: 1px solid #a1a1a1;
+  border-radius: 0.25rem;
+}
+.chats input:focus {
+  outline: 1px solid blue;
+  box-shadow: rgba(75, 75, 240, 0.41) 1px 0px 20px 0px;
+}
+
+.todo-list li {
+  flex-basis: 100%;
+  border-bottom: 1px solid #ededed;
+  padding: 1rem;
+}
+.todo-list li .profile-list--right-side {
+  opacity: 0;
+}
+.todo-list li .profile-list--right-side a {
+  padding: 0;
+}
+.todo-list li .profile-list--right-side i {
+  margin: 0;
+  padding: 1.5rem;
+  border-radius: 0.25rem;
+}
+.todo-list li .profile-list--right-side .fa-trash {
+  color: #d92550;
+}
+.todo-list li .profile-list--right-side .fa-trash:hover {
+  color: #fff;
+  background-color: #d92550;
+}
+.todo-list li .profile-list--right-side .fa-check {
+  color: #3ac47d;
+}
+.todo-list li .profile-list--right-side .fa-check:hover {
+  color: #fff;
+  background-color: #3ac47d;
+}
+.todo-list li:hover .profile-list--right-side {
+  opacity: 1;
+}
+.todo-list input {
+  margin-right: 1rem;
+}
+.todo-list .profile-solo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+}
+.todo-list .todo-indicator {
+  width: 0.5rem;
+  height: 3rem;
+  border-radius: 0.05rem;
+}
+.todo-list .bg-warning {
+  background-color: #f7b924;
+}
+.todo-list .bg-alt {
+  background-color: #794c8a;
+}
+.todo-list .profile-lists--profile {
+  display: flex;
+  flex-grow: 1;
+  gap: 1rem;
 }/*# sourceMappingURL=style.css.map */
