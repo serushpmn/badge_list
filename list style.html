@@ -14,7 +14,7 @@
   <body>
     <main id="list-groups" class="flex">
       <div class="col-6">
-        <div class="card-button">
+        <div class="card-button-2">
           <ul class="profile-lists flex-col bg-white">
             <li class="profile-solo">
               <div class="profile-lists--profile">
@@ -156,7 +156,7 @@
         </div>
       </div>
       <div class="col-6">
-        <div class="card-button">
+        <div class="card-button-2">
           <ul class="chats flex-col bg-white">
             <li><h4>with buttons</h4></li>
             <li>
@@ -277,10 +277,10 @@
         </div>
       </div>
       <div class="col-6">
-        <div class="card-button">
+        <div class="card-button-2">
           <ul class="todo-list flex-col bg-white">
-            <li><h4>TODO List</h4></li>
-            <li class="profile-solo">
+            <li class="task-todo"><h4>TODO List</h4></li>
+            <!-- <li class="profile-solo">
               <div class="todo-indicator bg-warning"></div>
               <div class="profile-lists--profile">
                 <input type="checkbox" name="" id="" />
@@ -295,55 +295,240 @@
                 <a href="#"><i class="fa fa-check"></i></a>
                 <a href="#"><i class="fa fa-trash"></i></a>
               </div>
-            </li>
-            <li class="profile-solo">
-              <div class="todo-indicator bg-alt"></div>
-              <div class="profile-lists--profile">
+            </li> -->
+            <li class="task-todo">
+              <div class="task-todo--left">
+                <div class="indicator bg-warning"></div>
                 <input type="checkbox" name="" id="" />
                 <div class="profile-lists--profile__name">
-                  <h2>Alina Mcloughlin</h2>
-
-                  <p>A short profile description</p>
+                  <h2>
+                    Wash the car
+                    <span class="badge badge-label badge-danger">rejected</span>
+                  </h2>
+                  <p>Written by Bob</p>
                 </div>
               </div>
-              <div class="profile-list--right-side">
+              <div class="task-todo--right">
+                <a href="#"><i class="fa fa-check"></i></a>
+                <a href="#"><i class="fa fa-trash"></i></a>
+              </div>
+            </li>
+            <li class="task-todo">
+              <div class="task-todo--left">
+                <div class="indicator bg-dark"></div>
+                <input type="checkbox" name="" id="" />
+                <div class="profile-lists--profile__name">
+                  <h2>Task with dropdown menu</h2>
+                  <p>
+                    By Johnny
+                    <span class="badge badge-pills badge-info">new</span>
+                  </p>
+                </div>
+              </div>
+              <div class="task-todo--right">
                 <select name="" id="">
-                  <option value="">MENU</option>
-                  <option value="">Header</option>
-                  <option value="">another action</option>
+                  <option value="0">Menu</option>
+                  <option value="1">Action</option>
+                  <option value="2">Another Action</option>
                 </select>
               </div>
             </li>
-            <li class="profile-solo">
-              <div class="todo-indicator bg-warning"></div>
-              <div class="profile-lists--profile">
+            <li class="task-todo">
+              <div class="task-todo--left">
+                <div class="indicator bg-primary"></div>
                 <input type="checkbox" name="" id="" />
                 <div class="profile-lists--profile__name">
-                  <h2>Alina Mcloughlin</h2>
-
-                  <p>A short profile description</p>
+                  <h2>Badge on the right task</h2>
+                  <p>This task has show on hover actions!</p>
                 </div>
-                <span class="badge badge-label badge-danger">REJECTED</span>
               </div>
-              <div class="profile-list--right-side">
+              <div class="task-todo--right">
+                <a href="#"><i class="fa fa-check"></i></a>
+              </div>
+              <span class="badge badge-pills badge-success">latest task</span>
+            </li>
+            <li class="task-todo">
+              <div class="task-todo--left">
+                <div class="indicator bg-info"></div>
+                <input type="checkbox" name="" id="" />
+                <div class="profile-lists--profile">
+                  <img
+                    src="img/profile.png"
+                    alt="profile thumbnail"
+                    class="profile_square"
+                  />
+                </div>
+                <div class="profile-lists--profile__name">
+                  <h2>Go grocery shopping</h2>
+                  <p>A short description for this todo item</p>
+                </div>
+              </div>
+              <div class="task-todo--right">
                 <a href="#"><i class="fa fa-check"></i></a>
                 <a href="#"><i class="fa fa-trash"></i></a>
               </div>
             </li>
-            <li class="profile-solo">
-              <div class="todo-indicator bg-warning"></div>
-              <div class="profile-lists--profile">
+            <li class="task-todo">
+              <div class="task-todo--left">
+                <div class="indicator bg-warning"></div>
                 <input type="checkbox" name="" id="" />
                 <div class="profile-lists--profile__name">
-                  <h2>Alina Mcloughlin</h2>
-
-                  <p>A short profile description</p>
+                  <h2>
+                    Wash the car
+                    <span class="badge badge-label badge-danger">rejected</span>
+                  </h2>
+                  <p>Written by Bob</p>
                 </div>
-                <span class="badge badge-label badge-danger">REJECTED</span>
               </div>
-              <div class="profile-list--right-side">
+              <div class="task-todo--right always-on">
+                <span class="badge badge-label badge-warning">69</span>
                 <a href="#"><i class="fa fa-check"></i></a>
                 <a href="#"><i class="fa fa-trash"></i></a>
+              </div>
+            </li>
+            <li class="task-todo task-submit">
+              <a href="#">Cancel</a><button class="btn-success">Save</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="card-button-2">
+          <ul class="profile-lists flex-col bg-white">
+            <li class="profile-solo">
+              <div class="profile-lists--profile">
+                <img
+                  src="img/profile.png"
+                  alt="profile thumbnail"
+                  class="profile_round"
+                />
+                <div class="profile-lists--profile__name">
+                  <h2>Alina Mcloughlin</h2>
+                  <p>A short profile description</p>
+                </div>
+              </div>
+              <div class="profile-list--right-side">
+                <button class="btn-primary">Fire</button
+                ><button class="btn-primary">Hire</button>
+              </div>
+            </li>
+            <li class="profile-solo">
+              <div class="profile-lists--profile">
+                <img
+                  src="img/profile.png"
+                  alt="profile thumbnail"
+                  class="profile_square"
+                />
+                <div class="profile-lists--profile__name">
+                  <h2>Ruben Tillman</h2>
+                  <p>Etiam sit amet orci eget eros faucibus</p>
+                </div>
+              </div>
+              <div class="profile-list--right-side">
+                <span class="badge-pills badge-danger">NEW</span>
+              </div>
+            </li>
+            <li class="profile-solo">
+              <div class="profile-lists--profile">
+                <img
+                  src="img/profile.png"
+                  alt="profile thumbnail"
+                  class="profile_square"
+                />
+                <div class="profile-lists--profile__name">
+                  <h2>Vinnie Wagstaff</h2>
+                </div>
+              </div>
+              <div class="profile-list--right-side">
+                <span class="badge-pills badge-link badge-dark">Details</span>
+              </div>
+            </li>
+            <li class="profile-solo">
+              <div class="profile-lists--profile">
+                <img
+                  src="img/profile.png"
+                  alt="profile thumbnail"
+                  class="profile_square"
+                />
+                <div class="profile-lists--profile__name">
+                  <h2>Ella-Rose Henry</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetuer</p>
+                </div>
+              </div>
+              <div class="profile-list--right-side">
+                <span class="price">$377</span>
+              </div>
+            </li>
+            <li class="profile-solo">
+              <div class="profile-lists--profile">
+                <img
+                  src="img/profile.png"
+                  alt="profile thumbnail"
+                  class="profile_square"
+                />
+                <div class="profile-lists--profile__name">
+                  <h2>Eliot Huber</h2>
+                </div>
+              </div>
+              <div class="profile-list--right-side">
+                <span class="badge-pills badge-warning">43</span>
+              </div>
+            </li>
+            <li class="profile-solo product-sales">
+              <div class="profile-lists--profile">
+                <img
+                  src="img/profile.png"
+                  alt="profile thumbnail"
+                  class="profile_square"
+                />
+                <div class="profile-lists--profile__name product-sales">
+                  <h2>Product Sales</h2>
+                  <p>
+                    <span class="product-qty">43</span> Sales
+                    <span class="product-total-sales">$156,24</span> Totals
+                  </p>
+                </div>
+              </div>
+              <div class="profile-list--right-side percentage">
+                <div class="percentage_text">
+                  <p>52.5%</p>
+                  <span>YoY Growth</span>
+                </div>
+                <img src="img/circular-bar-chart.PNG" alt="" />
+              </div>
+            </li>
+            <li class="profile-solo">
+              <div class="profile-lists--profile">
+                <div class="profile-lists--profile__name">
+                  <h2>Product Sales</h2>
+                </div>
+              </div>
+              <div class="profile-list--right-side percentage">
+                <img src="img/circular-bar-chart 2.PNG" />
+              </div>
+            </li>
+            <li class="profile-solo hidden_action">
+              <div class="profile-lists--profile">
+                <i class="fa fa-gear"></i>
+                <div class="profile-lists--profile__name">
+                  <h2>Hidden Actions Pane</h2>
+                </div>
+              </div>
+              <div class="profile-list--right-side">
+                <span class="badge-pills badge-link badge-primary">follow</span>
+              </div>
+            </li>
+            <li class="profile-solo">
+              <div class="profile-lists--profile">
+                <i class="fa fa-file-o"></i>
+                <div class="profile-lists--profile__name">
+                  <h2>Example file 1</h2>
+                </div>
+              </div>
+              <div class="profile-list--right-side">
+                <a href="#">
+                  <i class="fa fa-share"></i>
+                </a>
               </div>
             </li>
           </ul>

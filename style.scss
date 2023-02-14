@@ -104,6 +104,7 @@ button {
   border-radius: 0.35rem;
   border: 1px solid transparent;
   position: relative;
+  cursor: pointer;
 }
 .card-button {
   background-color: #fff;
@@ -271,51 +272,54 @@ h4 {
 }
 //// LIST STYLE START HERE...////
 ///..........................////
-ul.profile-lists {
-  li {
-    flex-basis: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem 2rem;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
-    .profile-lists--profile {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      img {
-        width: 4rem;
-        height: 4rem;
-        margin-right: 1rem;
-      }
-      .profile_round {
-        border-radius: 50%;
-      }
-      .profile_square {
-        border-radius: 0.25rem;
-      }
-
-      .product-sales {
-        p {
-          color: rgb(66, 66, 66);
-          opacity: 1;
-        }
-        .product-qty {
-          color: $dark;
-          font-weight: bold;
-        }
-        .product-total-sales {
-          color: $success;
-          font-weight: bold;
-        }
-      }
-      i {
-        font-size: 1.5rem;
-        padding: 1rem;
-      }
-    }
+.card-button-2 {
+  padding: 1rem;
+}
+li.profile-solo {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+.profile-lists--profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  img {
+    width: 4rem;
+    height: 4rem;
+  }
+  .profile_round {
+    border-radius: 50%;
+  }
+  .profile_square {
+    border-radius: 0.25rem;
   }
 }
+ul.profile-lists {
+  .product-sales {
+    p {
+      color: rgb(66, 66, 66);
+      opacity: 1;
+    }
+    .product-qty {
+      color: $dark;
+      font-weight: bold;
+    }
+    .product-total-sales {
+      color: $success;
+      font-weight: bold;
+    }
+  }
+  i {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+}
+
 .profile-lists--profile__name {
   display: flex;
   flex-direction: column;
@@ -492,66 +496,155 @@ ul.profile-lists {
 
 //.....TODO list ......//
 ////
-.todo-list {
-  li {
-    flex-basis: 100%;
-    border-bottom: 1px solid #ededed;
-    padding: 1rem;
-    .profile-list--right-side {
-      a {
-        padding: 0;
-      }
-      i {
-        margin: 0;
-        padding: 1.5rem;
-        border-radius: 0.25rem;
-      }
-      opacity: 0;
-      .fa-trash {
-        color: $danger;
-        &:hover {
-          color: #fff;
-          background-color: $danger;
-        }
-      }
-      .fa-check {
-        color: $success;
-        &:hover {
-          color: #fff;
-          background-color: $success;
-        }
-      }
-    }
-    &:hover {
-      .profile-list--right-side {
-        opacity: 1;
-      }
-    }
+// .todo-list {
+//   li {
+//     flex-basis: 100%;
+//     border-bottom: 1px solid #ededed;
+//     padding: 1rem;
+//     .profile-list--right-side {
+//       a {
+//         padding: 0;
+//       }
+//       i {
+//         margin: 0;
+//         padding: 1.5rem;
+//         border-radius: 0.25rem;
+//       }
+//       opacity: 0;
+//       .fa-trash {
+//         color: $danger;
+//         &:hover {
+//           color: #fff;
+//           background-color: $danger;
+//         }
+//       }
+//       .fa-check {
+//         color: $success;
+//         &:hover {
+//           color: #fff;
+//           background-color: $success;
+//         }
+//       }
+//     }
+//     &:hover {
+//       .profile-list--right-side {
+//         opacity: 1;
+//       }
+//     }
+//   }
+//   input {
+//     margin-right: 1rem;
+//   }
+//   .profile-solo {
+//     display: flex;
+//     justify-content: flex-start;
+//     align-items: center;
+//     gap: 2rem;
+//   }
+//   .todo-indicator {
+//     width: 0.5rem;
+//     height: 3rem;
+//     // background-color: #000;
+//     border-radius: 0.05rem;
+//   }
+//   .bg-warning {
+//     background-color: $warning;
+//   }
+//   .bg-alt {
+//     background-color: $alt;
+//   }
+//   .profile-lists--profile {
+//     display: flex;
+//     flex-grow: 1;
+//     gap: 1rem;
+//   }
+// }
+li.task-todo {
+  flex-basis: 100%;
+  display: flex;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 1rem;
+  // gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  img {
+    width: 4rem;
+    height: 4rem;
   }
-  input {
-    margin-right: 1rem;
-  }
-  .profile-solo {
+  .task-todo--left {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
     gap: 2rem;
+    justify-content: flex-start;
   }
-  .todo-indicator {
+  .badge-label {
+    padding: 0.25rem 1rem;
+    border-radius: 0.35rem;
+  }
+  .badge-pills {
+    padding: 0.25rem 1rem;
+    height: 100%;
+  }
+  .always-on {
+    opacity: 1 !important;
+  }
+  .task-todo--right {
+    a {
+      padding: 0;
+    }
+    i {
+      margin: 0;
+      padding: 1.5rem;
+      border-radius: 0.25rem;
+    }
+    opacity: 0;
+    .fa-trash {
+      color: $danger;
+      &:hover {
+        color: #fff;
+        background-color: $danger;
+      }
+    }
+    .fa-check {
+      color: $success;
+      &:hover {
+        color: #fff;
+        background-color: $success;
+      }
+    }
+  }
+  &:hover {
+    .task-todo--right {
+      opacity: 1;
+    }
+  }
+
+  .indicator {
     width: 0.5rem;
-    height: 3rem;
-    // background-color: #000;
-    border-radius: 0.05rem;
+    height: auto;
+    border-radius: 0.25rem;
   }
-  .bg-warning {
-    background-color: $warning;
+  select {
+    appearance: none;
+    background-color: $dark;
+    color: #fff;
+    border: 1px solid $dark;
+    padding: 1rem;
+    margin: 0;
+    outline: none;
+    font-size: 1.25rem;
+    cursor: pointer;
+    line-height: 1.1;
+    border-radius: 0.5rem;
+    option {
+      white-space: normal;
+      border-radius: 0.5rem;
+      padding: 1rem;
+      background-color: #fff;
+      color: $dark;
+    }
   }
-  .bg-alt {
-    background-color: $alt;
-  }
-  .profile-lists--profile {
-    display: flex;
-    flex-grow: 1;
-    gap: 1rem;
-  }
+}
+
+.task-submit {
+  justify-content: flex-end !important;
 }

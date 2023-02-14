@@ -14,6 +14,37 @@ $light: #eeeeee;
 $dark: #343a40;
 $title: #555f78;
 
+.bg-primary {
+  background-color: $primary;
+}
+.bg-secondary {
+  background-color: $secondary;
+}
+.bg-success {
+  background-color: $success;
+}
+.bg-info {
+  background-color: $info;
+}
+.bg-warning {
+  background-color: $warning;
+}
+.bg-danger {
+  background-color: $danger;
+}
+.bg-focus {
+  background-color: $focus;
+}
+.bg-alt {
+  background-color: $alt;
+}
+.bg-light {
+  background-color: $light;
+}
+.bg-dark {
+  background-color: $dark;
+}
+
 // //MIXINS Define HERE ////
 //.....................//
 

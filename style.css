@@ -1,3 +1,43 @@
+.bg-primary {
+  background-color: #3f69d6;
+}
+
+.bg-secondary {
+  background-color: #6c757d;
+}
+
+.bg-success {
+  background-color: #3ac47d;
+}
+
+.bg-info {
+  background-color: #16aaff;
+}
+
+.bg-warning {
+  background-color: #f7b924;
+}
+
+.bg-danger {
+  background-color: #d92550;
+}
+
+.bg-focus {
+  background-color: #444054;
+}
+
+.bg-alt {
+  background-color: #794c8a;
+}
+
+.bg-light {
+  background-color: #eeeeee;
+}
+
+.bg-dark {
+  background-color: #343a40;
+}
+
 .btn-primary {
   background-color: #3f69d6;
   color: #fff;
@@ -441,6 +481,7 @@ button {
   border-radius: 0.35rem;
   border: 1px solid transparent;
   position: relative;
+  cursor: pointer;
 }
 
 .card-button {
@@ -613,7 +654,11 @@ h4 {
   height: 2rem;
 }
 
-ul.profile-lists li {
+.card-button-2 {
+  padding: 1rem;
+}
+
+li.profile-solo {
   flex-basis: 100%;
   display: flex;
   justify-content: space-between;
@@ -621,35 +666,37 @@ ul.profile-lists li {
   padding: 1.5rem 2rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
-ul.profile-lists li .profile-lists--profile {
+
+.profile-lists--profile {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 1.5rem;
 }
-ul.profile-lists li .profile-lists--profile img {
+.profile-lists--profile img {
   width: 4rem;
   height: 4rem;
-  margin-right: 1rem;
 }
-ul.profile-lists li .profile-lists--profile .profile_round {
+.profile-lists--profile .profile_round {
   border-radius: 50%;
 }
-ul.profile-lists li .profile-lists--profile .profile_square {
+.profile-lists--profile .profile_square {
   border-radius: 0.25rem;
 }
-ul.profile-lists li .profile-lists--profile .product-sales p {
+
+ul.profile-lists .product-sales p {
   color: rgb(66, 66, 66);
   opacity: 1;
 }
-ul.profile-lists li .profile-lists--profile .product-sales .product-qty {
+ul.profile-lists .product-sales .product-qty {
   color: #343a40;
   font-weight: bold;
 }
-ul.profile-lists li .profile-lists--profile .product-sales .product-total-sales {
+ul.profile-lists .product-sales .product-total-sales {
   color: #3ac47d;
   font-weight: bold;
 }
-ul.profile-lists li .profile-lists--profile i {
+ul.profile-lists i {
   font-size: 1.5rem;
   padding: 1rem;
 }
@@ -820,61 +867,90 @@ ul.profile-lists li .profile-lists--profile i {
   box-shadow: rgba(75, 75, 240, 0.41) 1px 0px 20px 0px;
 }
 
-.todo-list li {
+li.task-todo {
   flex-basis: 100%;
-  border-bottom: 1px solid #ededed;
+  display: flex;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
   padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
 }
-.todo-list li .profile-list--right-side {
+li.task-todo img {
+  width: 4rem;
+  height: 4rem;
+}
+li.task-todo .task-todo--left {
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-start;
+}
+li.task-todo .badge-label {
+  padding: 0.25rem 1rem;
+  border-radius: 0.35rem;
+}
+li.task-todo .badge-pills {
+  padding: 0.25rem 1rem;
+  height: 100%;
+}
+li.task-todo .always-on {
+  opacity: 1 !important;
+}
+li.task-todo .task-todo--right {
   opacity: 0;
 }
-.todo-list li .profile-list--right-side a {
+li.task-todo .task-todo--right a {
   padding: 0;
 }
-.todo-list li .profile-list--right-side i {
+li.task-todo .task-todo--right i {
   margin: 0;
   padding: 1.5rem;
   border-radius: 0.25rem;
 }
-.todo-list li .profile-list--right-side .fa-trash {
+li.task-todo .task-todo--right .fa-trash {
   color: #d92550;
 }
-.todo-list li .profile-list--right-side .fa-trash:hover {
+li.task-todo .task-todo--right .fa-trash:hover {
   color: #fff;
   background-color: #d92550;
 }
-.todo-list li .profile-list--right-side .fa-check {
+li.task-todo .task-todo--right .fa-check {
   color: #3ac47d;
 }
-.todo-list li .profile-list--right-side .fa-check:hover {
+li.task-todo .task-todo--right .fa-check:hover {
   color: #fff;
   background-color: #3ac47d;
 }
-.todo-list li:hover .profile-list--right-side {
+li.task-todo:hover .task-todo--right {
   opacity: 1;
 }
-.todo-list input {
-  margin-right: 1rem;
-}
-.todo-list .profile-solo {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 2rem;
-}
-.todo-list .todo-indicator {
+li.task-todo .indicator {
   width: 0.5rem;
-  height: 3rem;
-  border-radius: 0.05rem;
+  height: auto;
+  border-radius: 0.25rem;
 }
-.todo-list .bg-warning {
-  background-color: #f7b924;
+li.task-todo select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #343a40;
+  color: #fff;
+  border: 1px solid #343a40;
+  padding: 1rem;
+  margin: 0;
+  outline: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+  line-height: 1.1;
+  border-radius: 0.5rem;
 }
-.todo-list .bg-alt {
-  background-color: #794c8a;
+li.task-todo select option {
+  white-space: normal;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  background-color: #fff;
+  color: #343a40;
 }
-.todo-list .profile-lists--profile {
-  display: flex;
-  flex-grow: 1;
-  gap: 1rem;
+
+.task-submit {
+  justify-content: flex-end !important;
 }/*# sourceMappingURL=style.css.map */
