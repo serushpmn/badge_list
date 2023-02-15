@@ -50,6 +50,17 @@ main {
   min-width: 50%;
   flex-wrap: wrap;
 }
+@media screen and (max-width: 720px) {
+  .col-6 {
+    flex-basis: 100%;
+    min-width: 100%;
+  }
+  .col-3 {
+    flex-basis: 50%;
+    flex-grow: 1;
+    min-width: 50%;
+  }
+}
 .col-4 {
   flex-basis: 33.3%;
   min-width: 33.3%;
@@ -494,71 +505,6 @@ ul.profile-lists {
   }
 }
 
-//.....TODO list ......//
-////
-// .todo-list {
-//   li {
-//     flex-basis: 100%;
-//     border-bottom: 1px solid #ededed;
-//     padding: 1rem;
-//     .profile-list--right-side {
-//       a {
-//         padding: 0;
-//       }
-//       i {
-//         margin: 0;
-//         padding: 1.5rem;
-//         border-radius: 0.25rem;
-//       }
-//       opacity: 0;
-//       .fa-trash {
-//         color: $danger;
-//         &:hover {
-//           color: #fff;
-//           background-color: $danger;
-//         }
-//       }
-//       .fa-check {
-//         color: $success;
-//         &:hover {
-//           color: #fff;
-//           background-color: $success;
-//         }
-//       }
-//     }
-//     &:hover {
-//       .profile-list--right-side {
-//         opacity: 1;
-//       }
-//     }
-//   }
-//   input {
-//     margin-right: 1rem;
-//   }
-//   .profile-solo {
-//     display: flex;
-//     justify-content: flex-start;
-//     align-items: center;
-//     gap: 2rem;
-//   }
-//   .todo-indicator {
-//     width: 0.5rem;
-//     height: 3rem;
-//     // background-color: #000;
-//     border-radius: 0.05rem;
-//   }
-//   .bg-warning {
-//     background-color: $warning;
-//   }
-//   .bg-alt {
-//     background-color: $alt;
-//   }
-//   .profile-lists--profile {
-//     display: flex;
-//     flex-grow: 1;
-//     gap: 1rem;
-//   }
-// }
 li.task-todo {
   flex-basis: 100%;
   display: flex;
